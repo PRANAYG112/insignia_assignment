@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import DownLoad from './components/DownLoad';
+import FeaturesMore from './components/FeaturesMore';
+import Footer from './components/Footer';
+import LearnMore from './components/LearnMore';
+import NavBar from './components/NavBar';
+import SecureMore from './components/SecureMore';
+import TestCards from './components/TestCards';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <NavBar />
+      <div className="container ">
+        <div className="container">
+          <LearnMore /> <br />
+        </div>
+        <SecureMore /> <br />
+        <div className="container">
+          <FeaturesMore /> <br />
+        </div>
+        <DownLoad /> <br />
+        <div className="container">
+          <TestCards />
+        </div>
+        <hr />
+      </div>
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+// export default images;
