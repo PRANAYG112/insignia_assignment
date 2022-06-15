@@ -8,9 +8,9 @@ import secure from '../images/ShieldCheck.svg'
 export default function FeaturesMore() {
     return (
         <div className="container features-bg justify-content-center">
-         <h3 className="heading">Features</h3>
             <div className="conatiner padding-secure mt-4 mb-4 d-flex justify-content-center">
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+        <div className="d-flex justify-content-center align-items-center"><h3 className="heading mt-3">Features</h3></div>
+                <div id="carouselExampleIndicators" className="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
                     <div className="carousel-inner col-lg-12">
                         <div className="carousel-item active">
                             <span className="search">
